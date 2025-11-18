@@ -251,7 +251,7 @@ async function loadNatal() {
         .from('natal')
         .select('*')
         .order('created_at', { ascending: false })
-        .limit(3);
+        .limit(6);
 
       if (error) throw error;
       if (Array.isArray(data) && data.length) {
@@ -291,3 +291,4 @@ toastStyle.textContent = `
 `;
 
 document.head.appendChild(toastStyle);
+
