@@ -190,7 +190,7 @@ function renderNatal(natal) {
   if (!grid) return;
 
   grid.innerHTML = '';
-  const items = natal.slice(0, 3);
+  const items = natal.slice(0, 6);
 
   items.forEach(p => {
     const discountCalc = (p && p.old_price && p.new_price)
@@ -289,4 +289,5 @@ toastStyle.textContent = `
     to { transform: translateX(400px); opacity: 0; }
   }
 `;
+
 document.head.appendChild(toastStyle);
