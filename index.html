@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natal tech</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.cdnfonts.com/css/sunshine-festival" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/agoestoesan" rel="stylesheet">
+                
+  </head>
+  <body>
+  <canvas id="particles-canvas"></canvas>
+    <main>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1 class="main-title" id="main-title">Natal tech</h1>
+          <p class="subtitle" id="subtitle">Descontos que chegam a 80% 🎅</p>
+          <div class="countdown-container">
+            <div class="countdown-item">
+              <span class="countdown-number" id="days">00</span>
+              <span class="countdown-label">Dias</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="hours">00</span>
+              <span class="countdown-label">Horas</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="minutes">00</span>
+              <span class="countdown-label">Minutos</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-number" id="seconds">00</span>
+              <span class="countdown-label">Segundos</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="natal-section">
+        <!-- Título e grade de produtos. O JS insere cartões de produto aqui. -->
+        <h2 class="natal-title">Especial de Natal Encantado</h2>
+        <div class="natal-grid"></div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script>
+    window.__SUPABASE = window.__SUPABASE || {
+        url: window.SUPABASE_URL || 'https://jmhyfqogpjaiuqkjwvxo.supabase.co',
+        anonKey: window.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImptaHlmcW9ncGphaXVxa2p3dnhvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI4NjI0NzYsImV4cCI6MjA3ODQzODQ3Nn0.cayPAOkexhi4kheyQp2WjJ_a6BVpwwGaB27qCJ3CspQ'
+      };
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
